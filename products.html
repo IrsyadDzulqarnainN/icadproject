@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — ICAD SPORT</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">ICAD<span>SPORT</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1556906781-9a412961d28c?w=1920&h=500&fit=crop&auto=format');">
+      <div class="page-hero-content">
+        <div class="section-label">— KOLEKSI LENGKAP</div>
+        <h1>OUR PRODUCTS</h1>
+        <p>Temukan lebih dari 500+ produk olahraga pilihan terbaik</p>
+      </div>
+      <div class="page-hero-deco">PRODUCTS</div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <section class="filter-section">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="footwear">Footwear</button>
+        <button class="filter-btn" data-filter="apparel">Apparel</button>
+        <button class="filter-btn" data-filter="equipment">Equipment</button>
+        <button class="filter-btn" data-filter="teamsport">Team Sport</button>
+      </div>
+    </section>
+
+    <!-- PRODUCT GRID -->
+    <section class="products-section">
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Footwear -->
+        <div class="product-item" data-cat="footwear">
+          <div class="pi-img" style="background:linear-gradient(135deg,#FF3C00,#FF8A00)"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=350&fit=crop&auto=format" alt="Running Pro X9" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Footwear</span>
+            <h3>Running Pro X9</h3>
+            <p>Sepatu lari ringan dengan teknologi air cushion untuk performa maksimal.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 899.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item" data-cat="footwear">
+          <div class="pi-img" style="background:linear-gradient(135deg,#1a1a2e,#FF3C00)"><img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500&h=350&fit=crop&auto=format" alt="Futsal King V2" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Footwear</span>
+            <h3>Futsal King V2</h3>
+            <p>Sepatu futsal dengan sol non-marking, grip kuat di lapangan indoor.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 650.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item" data-cat="footwear">
+          <div class="pi-img" style="background:linear-gradient(135deg,#00C2FF,#005F7F)"><img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=500&h=350&fit=crop&auto=format" alt="BasketBolt Elite" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Footwear</span>
+            <h3>BasketBolt Elite</h3>
+            <p>Sepatu basket high-cut dengan ankle support ekstra dan sol anti-slip.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 1.100.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apparel -->
+        <div class="product-item" data-cat="apparel">
+          <div class="pi-img" style="background:linear-gradient(135deg,#FFD600,#FF8A00)"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=350&fit=crop&auto=format" alt="AeroFit Jersey" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Apparel</span>
+            <h3>AeroFit Jersey</h3>
+            <p>Jersey serat mikro breathable, cocok untuk semua olahraga tim.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 349.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item" data-cat="apparel">
+          <div class="pi-img" style="background:linear-gradient(135deg,#1a1a2e,#7CFF6B)"><img src="https://dynamic.zacdn.com/cT_DsBYmu_D8ZtMXtb9yeRSnIFU=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/flexzone-7787-2187953-3.jpg" alt="FlexRun Shorts" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Apparel</span>
+            <h3>FlexRun Shorts</h3>
+            <p>Celana pendek ringan dengan kantong ritsleting dan bahan stretch 4 arah.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 279.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item" data-cat="apparel">
+          <div class="pi-img" style="background:linear-gradient(135deg,#FF3C00,#1a1a2e)"><img src="https://nineyard.world/cdn/shop/files/DSC08119_1800x1800.jpg?v=1748058880" alt="StormShield Jacket" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Apparel</span>
+            <h3>StormShield Jacket</h3>
+            <p>Jaket windbreaker tahan angin dan air, cocok untuk lari pagi maupun outdoor.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 589.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Equipment -->
+        <div class="product-item" data-cat="equipment">
+          <div class="pi-img" style="background:linear-gradient(135deg,#1a1a2e,#FF3C00)"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=350&fit=crop&auto=format" alt="PowerFlex Barbell Set" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Equipment</span>
+            <h3>PowerFlex Barbell Set</h3>
+            <p>Set barbel 20kg dengan plate cast iron dan collar pengaman berkualitas tinggi.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 1.250.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item" data-cat="equipment">
+          <div class="pi-img" style="background:linear-gradient(135deg,#7CFF6B,#005F7F)"><img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=500&h=350&fit=crop&auto=format" alt="ProMat Yoga 8mm" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Equipment</span>
+            <h3>ProMat Yoga 8mm</h3>
+            <p>Matras yoga tebal 8mm, anti-slip, dengan tali bawaan untuk kemudahan penyimpanan.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 199.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item" data-cat="equipment">
+          <div class="pi-img" style="background:linear-gradient(135deg,#FFD600,#1a1a2e)"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=350&fit=crop&auto=format" alt="ResistBand Pro Set" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Equipment</span>
+            <h3>ResistBand Pro Set</h3>
+            <p>Set 5 resistance band dengan tingkat resistansi berbeda + panduan latihan.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 159.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Sport -->
+        <div class="product-item" data-cat="teamsport">
+          <div class="pi-img" style="background:linear-gradient(135deg,#00C2FF,#1a1a2e)"><img src="https://down-id.img.susercontent.com/file/id-11134207-7r991-lx2khn363p4t8c@resize_w900_nl.webp" alt="UltraKick Bola Futsal" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Team Sport</span>
+            <h3>UltraKick Bola Futsal</h3>
+            <p>Bola futsal ukuran 4, bahan kulit PU berkualitas, cocok untuk latihan &amp; pertandingan.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 189.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item" data-cat="teamsport">
+          <div class="pi-img" style="background:linear-gradient(135deg,#FF3C00,#FFD600)"><img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&h=350&fit=crop&auto=format" alt="SlamDunk Ball Pro" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Team Sport</span>
+            <h3>SlamDunk Ball Pro</h3>
+            <p>Bola basket ukuran 7 standar FIBA, bahan rubber outdoor tahan lama.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 225.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-item" data-cat="teamsport">
+          <div class="pi-img" style="background:linear-gradient(135deg,#7CFF6B,#FF3C00)"><img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=500&h=350&fit=crop&auto=format" alt="Combat Gloves MX" loading="lazy"></div>
+          <div class="pi-info">
+            <span class="pi-tag">Team Sport</span>
+            <h3>Combat Gloves MX</h3>
+            <p>Sarung tinju kulit sintetis premium, padding tebal untuk latihan intensif.</p>
+            <div class="pi-footer">
+              <span class="pi-price">Rp 399.000</span>
+              <button class="btn-cart">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROMO STRIP -->
+    <section class="promo-strip">
+      <div class="strip-inner">
+        <span>⚡ GRATIS ONGKIR &gt; Rp500K</span>
+        <span>🏆 PRODUK ORIGINAL 100%</span>
+        <span>🔄 RETUR 30 HARI</span>
+        <span>🔒 PEMBAYARAN AMAN</span>
+        <span>⚡ GRATIS ONGKIR &gt; Rp500K</span>
+        <span>🏆 PRODUK ORIGINAL 100%</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">ICAD<span>SPORT</span></a>
+        <p>Toko olahraga terpercaya untuk semua kebutuhan atletmu.</p>
+        <div class="socials">
+          <a href="#">IG</a><a href="#">FB</a><a href="#">TT</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Navigasi</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Kategori</h5>
+        <ul>
+          <li><a href="products.html">Footwear</a></li>
+          <li><a href="products.html">Apparel</a></li>
+          <li><a href="products.html">Equipment</a></li>
+          <li><a href="products.html">Team Sport</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Kontak</h5>
+        <p>📍 Jl. Gejayan No. 12, Yogyakarta</p>
+        <p>📞 (0293) 123-456</p>
+        <p>✉️ hello@icadsport.id</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 ICAD SPORT. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
